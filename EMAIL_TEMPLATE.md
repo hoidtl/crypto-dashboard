@@ -4,7 +4,7 @@
 
 ---
 
-**Subject:** [Họ tên] - Bài test Frontend Developer - Crypto Dashboard
+**Subject:** [Tạ Văn Hội] - Bài test Frontend Developer - Crypto Dashboard
 
 ---
 
@@ -13,14 +13,13 @@
 ```
 Kính gửi team tuyển dụng Genesis Escape,
 
-Em là [Họ tên của bạn], em xin gửi kết quả bài test Frontend Developer - Crypto Dashboard.
+Em là [Tạ Văn Hội], em xin gửi kết quả bài test Frontend Developer - Crypto Dashboard.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📌 THÔNG TIN BÀI NỘP:
 
-🔗 Link demo trực tiếp: https://crypto-dashboard-abc123.vercel.app
-📁 Source code GitHub: https://github.com/YOUR_USERNAME/crypto-dashboard
+📁 Source code GitHub: https://github.com/hoidtl/crypto-dashboard
 🎥 Video demo: https://drive.google.com/file/d/YOUR_VIDEO_ID/view
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -64,23 +63,15 @@ Advanced Features (Bonus):
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📸 SCREENSHOTS:
-
-Desktop View: [Đính kèm hoặc link]
-Mobile View: [Đính kèm hoặc link]
-Dark Mode: [Đính kèm hoặc link]
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 Em đã hoàn thành đầy đủ các yêu cầu core và bonus của bài test.
 Em sẵn sàng giải thích chi tiết về code và các quyết định kỹ thuật nếu được mời phỏng vấn.
 
 Em cảm ơn team đã cho em cơ hội này và mong nhận được phản hồi!
 
 Trân trọng,
-[Họ tên]
-[Số điện thoại]
-[Email]
+[Tạ Văn Hội]
+[0355046630]
+[chitogelovehoi@gmail.com]
 ```
 
 ---
