@@ -1,70 +1,177 @@
-# Getting Started with Create React App
+# 🚀 Crypto Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dashboard theo dõi giá cryptocurrency theo thời gian thực với giao diện hiện đại và responsive.
 
-## Available Scripts
+## ✨ Tính năng
 
-In the project directory, you can run:
+### Core Features (Bắt buộc)
+- ✅ Hiển thị 20 đồng coin hàng đầu theo vốn hóa thị trường
+- ✅ Thông tin đầy đủ: Tên, Logo, Symbol, Giá hiện tại, % thay đổi 24h
+- ✅ Format số tiền chuẩn với dấu phân cách hàng nghìn ($65,000.00)
+- ✅ Màu sắc trực quan: Xanh (tăng giá), Đỏ (giảm giá)
+- ✅ Tìm kiếm real-time theo tên hoặc ký hiệu
+- ✅ Nút Refresh để cập nhật dữ liệu mới nhất
+- ✅ Responsive Design: Desktop (Table) + Mobile (Card)
 
-### `npm start`
+### Advanced Features (Bonus)
+- ⭐ Sắp xếp (Sort) theo Giá, % thay đổi, Market Cap
+- ⭐ Loading state với spinner animation
+- ⭐ Error handling với nút retry
+- ⭐ Dark Mode / Light Mode
+- ⭐ Smooth transitions và hover effects
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Công nghệ sử dụng
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Framework**: ReactJS (Hooks: useState, useEffect)
+- **Styling**: CSS thuần (không dùng framework)
+- **API**: CoinGecko Public API (không cần API key)
+- **State Management**: React Hooks
 
-### `npm test`
+## 📦 Cài đặt và Chạy Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Yêu cầu
+- Node.js (v14 trở lên)
+- npm hoặc yarn
 
-### `npm run build`
+### Các bước thực hiện
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone hoặc tải project**
+```bash
+cd crypto-dashboard
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Cài đặt dependencies**
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Chạy development server**
+```bash
+npm start
+```
 
-### `npm run eject`
+4. **Mở trình duyệt**
+```
+http://localhost:3000
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Build cho production**
+```bash
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Cấu trúc Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+crypto-dashboard/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx          # Header với nút Refresh và Dark Mode
+│   │   ├── SearchBar.jsx       # Ô tìm kiếm
+│   │   ├── CoinList.jsx        # Danh sách coins (Table + Card)
+│   │   ├── CoinCard.jsx        # Card hiển thị coin (Mobile)
+│   │   ├── Loading.jsx         # Loading spinner
+│   │   └── ErrorMessage.jsx    # Hiển thị lỗi
+│   ├── utils/
+│   │   └── formatters.js       # Format giá và phần trăm
+│   ├── styles/
+│   │   ├── App.css
+│   │   ├── Header.css
+│   │   ├── SearchBar.css
+│   │   ├── CoinList.css
+│   │   ├── CoinCard.css
+│   │   ├── Loading.css
+│   │   └── ErrorMessage.css
+│   ├── App.js                  # Main component
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎯 Các tính năng chi tiết
 
-## Learn More
+### 1. Hiển thị danh sách Coins
+- Fetch data từ CoinGecko API
+- Hiển thị 20 coins theo market cap
+- Desktop: Table layout với sort
+- Mobile: Card layout responsive
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. Tìm kiếm
+- Real-time search
+- Tìm theo tên hoặc symbol
+- Nút clear để xóa nhanh
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Sắp xếp (Sort)
+- Click vào header để sort
+- Sort theo: Giá, % thay đổi, Market Cap
+- Icon hiển thị hướng sort (↑↓)
 
-### Code Splitting
+### 4. Refresh Data
+- Nút Refresh ở header
+- Gọi lại API để cập nhật giá mới
+- Loading state khi đang fetch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 5. Dark Mode
+- Toggle giữa Light/Dark mode
+- Smooth transition
+- Icon thay đổi theo theme
 
-### Analyzing the Bundle Size
+### 6. Error Handling
+- Hiển thị thông báo lỗi rõ ràng
+- Nút "Try Again" để retry
+- Không crash app khi API lỗi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎨 Responsive Design
 
-### Making a Progressive Web App
+### Desktop (> 768px)
+- Table layout chuyên nghiệp
+- Hover effects
+- Sortable columns
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Mobile (≤ 768px)
+- Card layout dễ đọc
+- Touch-friendly
+- Optimized spacing
 
-### Advanced Configuration
+## 📊 API Endpoint
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+https://api.coingecko.com/api/v3/coins/markets
+?vs_currency=usd
+&order=market_cap_desc
+&per_page=20
+&page=1
+&sparkline=false
+```
 
-### Deployment
+## 💡 Code Quality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- ✅ Component nhỏ, tái sử dụng
+- ✅ Custom utils cho format data
+- ✅ CSS module hóa theo component
+- ✅ Naming convention rõ ràng
+- ✅ Comments ở logic phức tạp
+- ✅ Error boundary
+- ✅ Loading states
 
-### `npm run build` fails to minify
+## 🚀 Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project có thể deploy lên:
+- **Vercel**: `vercel --prod`
+- **Netlify**: Drag & drop folder `build`
+- **GitHub Pages**: `npm run deploy`
+
+## 📝 Ghi chú
+
+- API CoinGecko miễn phí, không cần đăng ký
+- Rate limit: ~50 requests/minute
+- Data cập nhật real-time từ exchanges
+
+## 👨‍💻 Tác giả
+
+Được phát triển như một bài test kỹ năng Frontend Developer
+
+---
+
+**Happy Coding! 🎉**

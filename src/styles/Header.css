@@ -1,0 +1,101 @@
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.dark-mode .header {
+  background: rgba(26, 26, 46, 0.95);
+  color: white;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #667eea;
+}
+
+.dark-mode .header-title {
+  color: #a78bfa;
+}
+
+.crypto-icon {
+  font-size: 32px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.refresh-btn,
+.theme-toggle {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.refresh-btn {
+  background: #667eea;
+  color: white;
+}
+
+.refresh-btn:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.theme-toggle {
+  background: #f3f4f6;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+
+.dark-mode .theme-toggle {
+  background: #374151;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 20px;
+  }
+  
+  .crypto-icon {
+    font-size: 24px;
+  }
+  
+  .refresh-btn {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  
+  .theme-toggle {
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+}

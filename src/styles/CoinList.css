@@ -1,0 +1,149 @@
+.coin-list {
+  margin-top: 20px;
+}
+
+/* Desktop Table View */
+.table-view {
+  display: block;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .table-view {
+  background: #1f2937;
+}
+
+.coin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coin-table thead {
+  background: #f9fafb;
+}
+
+.dark-mode .coin-table thead {
+  background: #111827;
+}
+
+.coin-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dark-mode .coin-table th {
+  color: #9ca3af;
+}
+
+.coin-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.coin-table th.sortable:hover {
+  color: #667eea;
+}
+
+.coin-table td {
+  padding: 16px;
+  border-top: 1px solid #f3f4f6;
+  color: #1f2937;
+}
+
+.dark-mode .coin-table td {
+  border-top-color: #374151;
+  color: #e5e7eb;
+}
+
+.coin-table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.coin-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.dark-mode .coin-table tbody tr:hover {
+  background: #111827;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coin-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.coin-name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.coin-symbol {
+  color: #6b7280;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.dark-mode .coin-symbol {
+  color: #9ca3af;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.positive {
+  color: #10b981 !important;
+  font-weight: 600;
+}
+
+.negative {
+  color: #ef4444 !important;
+  font-weight: 600;
+}
+
+/* Mobile Card View */
+.card-view {
+  display: none;
+}
+
+.no-results {
+  background: white;
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.dark-mode .no-results {
+  background: #1f2937;
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  .table-view {
+    display: none;
+  }
+  
+  .card-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
