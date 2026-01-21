@@ -20,7 +20,7 @@ Em là [Tạ Văn Hội], em xin gửi kết quả bài test Frontend Developer 
 📌 THÔNG TIN BÀI NỘP:
 
 📁 Source code GitHub: https://github.com/hoidtl/crypto-dashboard
-🎥 Video demo: https://drive.google.com/file/d/YOUR_VIDEO_ID/view
+Đường dẫn đến Website : https://crypto-dashboard-flax-zeta.vercel.app/?_vercel_share=tc8iziG56Y4QQiBBXCO97Xt996NbrJsq
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
